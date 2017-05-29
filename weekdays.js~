@@ -1,0 +1,13 @@
+var weekdays = document.querySelector(".weekdays");
+var date1 = document.querySelector(".date1");
+var date2 = document.querySelector(".date2");
+
+function getDate1(){
+  var d1 = new Date(date1.value);
+  // console.log(d1.getDay());
+  var d2 = new Date(date2.value);
+
+  var days = document.querySelectorAll('.days');
+    if(days[d1.getDay()] === days[d2.getDay()]){
+	days[d1.getDay()].classList.add('match');
+};
